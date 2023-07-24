@@ -3,27 +3,6 @@ import streamlit as st
 import pandas as pd
 import os
 
-import boto3
-from io import StringIO
-
-# Create a Boto3 session
-session = boto3.Session()
-
-# Specify the S3 bucket and folder path
-bucket_name = 'spotify-etl-project-vijay'
-folder_path = 'path/to/your/folder/'
-
-# Create an S3 client using the session
-s3_client = session.client('s3', aws_access_key_id = 'AKIATNNGKZCO4VQVF2MD',
-                           aws_secret_access_key = 'wijBUcbR17nPxuxtt252y8Vp7Ep7nogDqLXDXSbs')
-
-# Get the list of objects in the specified folder
-response = s3_client.list_objects_v2(Bucket=bucket_name, Prefix=folder_path)
-
-buckets = s3_client.list_buckets()
-# Print the names of all buckets
-for bucket in buckets:
-    print(bucket)
 
 
 
