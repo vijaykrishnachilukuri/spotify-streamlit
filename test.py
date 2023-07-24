@@ -3,12 +3,6 @@ import streamlit as st
 import pandas as pd
 import os
 
-import boto3
-from io import StringIO
-
-
-
-
 
 df_songs = pd.read_csv(r"D:\ISBA\capstone\songs_transformed_2023-07-19 21_05_59.102705.csv")
 df_albums = pd.read_csv(r"D:\ISBA\capstone\album_transformed_2023-07-17 20_01_54.281846.csv")
