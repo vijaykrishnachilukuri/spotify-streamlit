@@ -6,7 +6,7 @@ import os
 
 df_songs = pd.read_csv(r"D:\ISBA\capstone\songs_transformed_2023-07-19 21_05_59.102705.csv")
 df_albums = pd.read_csv(r"album_transformed_2023-07-24 19_11_08.537227.csv")
-df_artists = pd.read_csv(r"D:\ISBA\capstone\artist_transformed_2023-07-17 20_01_54.367685.csv")
+df_artists = pd.read_csv(r"artist_transformed_2023-07-24 19_11_08.582112.csv")
 
 # Changing the index to start from 1 instead of 0 in the dataframe
 df_songs.index += 1
