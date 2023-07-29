@@ -4,9 +4,9 @@ import pandas as pd
 import os
 
 
-df_songs = pd.read_csv(r"songs_transformed_2023-07-24 19_11_08.262787.csv")
-df_albums = pd.read_csv(r"album_transformed_2023-07-24 19_11_08.537227.csv")
-df_artists = pd.read_csv(r"artist_transformed_2023-07-24 19_11_08.582112.csv")
+df_songs = pd.read_csv(r"songs_transformed_2023-07-29 02_32_12.699469.csv")
+df_albums = pd.read_csv(r"album_transformed_2023-07-29 02_32_12.993910.csv")
+df_artists = pd.read_csv(r"artist_transformed_2023-07-29 02_32_13.072015.csv")
 
 # Changing the index to start from 1 instead of 0 in the dataframe
 df_songs.index += 1
